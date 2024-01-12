@@ -44,7 +44,7 @@ function DesignersPage() {
       />
       <div className="designer-desc-container">
         <h1 className="font4 f2">
-          <span className="font-gold">D</span>esigner{" "}
+          <span className="font-gold">d</span>esigner{" "}
           <span className="font-green">E</span>xperience
         </h1>
         <p className="f-8 m0 font2">
