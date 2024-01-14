@@ -19,7 +19,14 @@ function EngagementPage() {
           <div className="engagement-line"></div>
         </div>
       </div>
-      <p></p>
+      <p>   
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            fermentum justo eget nisl dapibus, nec venenatis justo malesuada.
+            Curabitur vel libero nec nisi suscipit pharetra. Duis vel risus eu
+            sem fringilla euismod at at tortor. Nullam nec urna in arcu
+            tristique facilisis. Sed fringilla velit at turpis aliquam, nec
+            vestibulum libero ullamcorper.
+            </p>
     </div>
   );
 }
