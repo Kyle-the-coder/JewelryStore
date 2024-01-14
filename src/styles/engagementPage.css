@@ -10,6 +10,28 @@
 .engagement-quote-container{
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+
+.engagement-line-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.engagement-line-container>p{
+ margin-left: 25px;
+ margin-right: 25px;
+}
+
+.engagement-line{
+    width: 25%;
+    height: 2px;
+    padding: 0px 5px;
+    background-color: black;
 }

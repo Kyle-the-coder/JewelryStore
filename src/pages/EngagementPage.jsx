@@ -13,7 +13,13 @@ function EngagementPage() {
       />
       <div className="engagement-quote-container">
         <h1>Choosing an Engagement Ring can be a daunting Task</h1>
+        <div className="engagement-line-container">
+          <div className="engagement-line"></div>
+         <p>Allow us to help you find ‘the one’</p>
+          <div className="engagement-line"></div>
+        </div>
       </div>
+      <p></p>
     </div>
   );
 }
