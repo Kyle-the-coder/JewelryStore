@@ -1,5 +1,6 @@
 import Banner from "../components/pageDesign/Banner";
 import darkRing from "../assets/ring-dark-display.jpg";
+import "../styles/engagementPage.css";
 function EngagementPage() {
   return (
     <div className="engagement-main-container">
@@ -10,7 +11,9 @@ function EngagementPage() {
         side={true}
         position="0 47%"
       />
-      <div></div>
+      <div className="engagement-quote-container">
+        <h1>Choosing an Engagement Ring can be a daunting Task</h1>
+      </div>
     </div>
   );
 }
