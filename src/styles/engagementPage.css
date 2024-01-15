@@ -47,3 +47,11 @@
     padding: 0px 5px;
     background-color: black;
 }
+
+.engagement-options-container{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
