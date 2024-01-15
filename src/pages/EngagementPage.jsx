@@ -3,9 +3,14 @@ import darkRing from "../assets/ring-dark-display.jpg";
 import rings from "../assets/rings-display.jpg"
 import ringsOnRings from "../assets/rings-on-rings-display.jpg"
 import phone from "../assets/rings-phone-display.jpg"
-import "../styles/engagementPage.css";
+import "../styles/engagementpage.css";
+import "../styles/jewelrypage.css"
 import PhotoTextDisplay from "../components/display/PhotoTextDisplay";
+import { ringInfo } from "../api/product";
+import { useEffect, useState } from "react";
 function EngagementPage() {
+
+  
   return (
     <div className="engagement-main-container">
       <Banner
@@ -59,7 +64,38 @@ function EngagementPage() {
         facilisis. Sed fringilla velit at turpis aliquam, nec vestibulum libero
         ullamcorper.</p>}/>
       </div>
-      
+
+      <div className="engagement-quote-container">
+        <div className="engagement-line-container">
+          <div className="engagement-line"></div>
+         <p className="font1">Here's a quick peak:</p>
+          <div className="engagement-line"></div>
+        </div>
+      </div>
+
+      <div className="grid-main-container">
+          <div className="img-grid-2">
+            {ringInfo.map((prod, index) => {
+              return (
+                <div
+                  className="designer-display-product-container big"
+                  key={prod.prodImg}
+                >
+                  <div className="designer-product-img">
+                    <img src={prod.prodImg} />
+                  </div>
+                  <div className="designer-product-display">
+                    <h3 className="product-text">{prod.prodName}</h3>
+                    <p className="product-text">{`$${prod.prodPrice}`}</p>
+                  </div>
+                  <button className="product-button ">Inuire Now</button>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+
     </div>
   );
 }

@@ -78,3 +78,54 @@ export const productInfo = [
     description: ["ring", "gold"],
   },
 ];
+
+export const ringInfo = [
+  {
+    prodName: "Sphere Peers",
+    prodImg: ring2,
+    prodPrice: 6711,
+    description: ["ring", "silver"],
+  },
+  {
+    prodName: "Ball of Chance",
+    prodImg: ring3,
+    prodPrice: 2411,
+    description: ["ring", "green"],
+  },
+  {
+    prodName: "The Phoenix",
+    prodImg: ring4,
+    prodPrice: 1811,
+    description: ["ring", "green"],
+  },
+  {
+    prodName: "Dragoon",
+    prodImg: ring5,
+    prodPrice: 1811,
+    description: ["ring", "silver"],
+  },
+  {
+    prodName: "Drop Green",
+    prodImg: ring6,
+    prodPrice: 1811,
+    description: ["ring", "silver"],
+  },
+  {
+    prodName: "Drop Blue",
+    prodImg: ring7,
+    prodPrice: 1811,
+    description: ["ring", "silver"],
+  },
+  {
+    prodName: "For Eternity",
+    prodImg: ring8,
+    prodPrice: 1811,
+    description: ["ring", "silver"],
+  },
+  {
+    prodName: "Drip Drop",
+    prodImg: ring9,
+    prodPrice: 1811,
+    description: ["ring", "gold"],
+  },
+];
