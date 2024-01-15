@@ -145,7 +145,7 @@ function JewelryPage() {
                     <h3 className="product-text">{prod.prodName}</h3>
                     <p className="product-text">{`$${prod.prodPrice}`}</p>
                   </div>
-                  <button className="product-button ">Inuire Now</button>
+                  <button className="product-button ">Inquire Now</button>
                 </div>
               );
             })}
