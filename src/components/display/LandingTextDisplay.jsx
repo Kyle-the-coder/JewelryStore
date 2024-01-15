@@ -5,8 +5,7 @@ export default function LandingTextDisplay() {
   return (
     <div className="landing-text-display-main-container">
       <h1 className="font1 f2">
-        A Gift of a Moment that <span className="font-gold">L</span>asts{" "}
-        <span className="font-light-green">F</span>orever
+        A <span className="font-gold">G</span>ift of a <span className="font-green">M</span>oment 
       </h1>
       <p className="f-8 font2">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque

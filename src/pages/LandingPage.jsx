@@ -53,7 +53,7 @@ function LandingPage() {
       <div className="landing-text-display-container">
         <div className="landing-text">
           <h1 className="font4 ">
-            From the <span className="font-gold">B</span>eginning, towards{" "}
+            From <span className="font-gold">N</span>ow, towards{" "}
             <span className="font-green">F</span>orever
           </h1>
           <p className="f-8 font1">

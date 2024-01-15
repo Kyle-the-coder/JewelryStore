@@ -34,6 +34,9 @@
 .landing-text {
   width: 75%;
 }
+.landing-text>h1 {
+  font-size: 3rem;
+}
 
 .landing-text-display-main-container {
   width: 55%;
@@ -44,6 +47,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.landing-text-display-main-container>h1 {
+  font-size: 3rem;
 }
 
 .landing-craftsman-display-container {
