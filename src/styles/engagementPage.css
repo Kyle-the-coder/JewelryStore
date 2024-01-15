@@ -13,6 +13,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: white;
+}
+.engagement-quote-container>p{
+    width: 90%;
+    text-align: center;
+}
+
+.engagement-quote-container>h1{
+    margin-top: 5%;
+    margin-bottom: 3%;
 }
 
 
@@ -24,13 +34,15 @@
     align-items: center;
 }
 
+
 .engagement-line-container>p{
  margin-left: 25px;
  margin-right: 25px;
+ font-size: 1.8rem;
 }
 
 .engagement-line{
-    width: 25%;
+    width: 23%;
     height: 2px;
     padding: 0px 5px;
     background-color: black;

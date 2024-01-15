@@ -49,6 +49,7 @@ function LandingPage() {
         side={true}
         position="0 50%"
       />
+
       <div className="landing-text-display-container">
         <div className="landing-text">
           <h1 className="font4 ">
@@ -65,10 +66,19 @@ function LandingPage() {
           </p>
         </div>
       </div>
+
       <div className="landing-img-display-container">
         <LandingTextDisplay />
         <ImgGrid setIsFirstRender={setIsFirstRender} />
       </div>
+
+      <div className="landing-quote-container">
+        <h1 className="font1 f1-2 ">
+          "Our passion is our craft, we put love into our service so you can express yours"
+        </h1>
+        <p className="font4 f1-5 m0">-Timothy Patrick</p>
+      </div>
+
       <SliderTextDisplay
         title={<h1 className="font4">
           In <span className="font-gold">S</span>tore{" "}
@@ -87,6 +97,7 @@ function LandingPage() {
         sliderId={1}
         isTopCurve={true}
       />
+
       <div className="landing-quote-container">
         <h1 className="font1 f1-2 ">
           "We love what we do, and we work hard to give you what you need at a

@@ -59,9 +59,9 @@ export function SliderTextDisplay({
     >
       {leftOrRight ? (
         <>
-          <div className="slider-text-display" ref={ref}>
+          <div className="slider-text-display" ref={ref} >
             {title}
-            <p className="font1 f-8">{paragraph}</p>
+            <p className="font1 f-8" >{paragraph}</p>
             <button className="form-button">{buttonName}</button>
           </div>
           <div className="slider-img-display">

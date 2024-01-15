@@ -12,13 +12,12 @@ function EngagementPage() {
         position="0 47%"
       />
       <div className="engagement-quote-container">
-        <h1>Choosing an Engagement Ring can be a daunting Task</h1>
+        <h1 className="font1">Choosing an Engagement Ring can be difficult</h1>
         <div className="engagement-line-container">
           <div className="engagement-line"></div>
-         <p>Allow us to help you find ‘the one’</p>
+         <p className="font1">Allow us to help you find ‘the one’</p>
           <div className="engagement-line"></div>
         </div>
-      </div>
       <p>   
            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
             fermentum justo eget nisl dapibus, nec venenatis justo malesuada.
@@ -26,7 +25,14 @@ function EngagementPage() {
             sem fringilla euismod at at tortor. Nullam nec urna in arcu
             tristique facilisis. Sed fringilla velit at turpis aliquam, nec
             vestibulum libero ullamcorper.
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            fermentum justo eget nisl dapibus, nec venenatis justo malesuada.
+            Curabitur vel libero nec nisi suscipit pharetra. Duis vel risus eu
+            sem fringilla euismod at at tortor. Nullam nec urna in arcu
+            tristique facilisis. Sed fringilla velit at turpis aliquam, nec
+            vestibulum libero ullamcorper.
             </p>
+      </div>
     </div>
   );
 }
