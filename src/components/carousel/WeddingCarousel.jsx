@@ -3,11 +3,8 @@ import axios from "axios";
 import Slider from "react-slick";
 import prevButtonImage from "../../assets/jewelry-left.png";
 import nextButtonImage from "../../assets/jewelry-right.png";
-import "../../styles/carousel.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-export default function CarouselComponent() {
+import "../../styles/weddingcarousel.css";
+export default function WeddingCarousel() {
   const [images, setImages] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const sliderRef = useRef(null);
@@ -66,37 +63,24 @@ export default function CarouselComponent() {
     nextArrow: <NextArrow />,
     beforeChange: (current, next) => setCurrentIndex(next % images.length),
   };
-
+  console.log(images);
   return (
-    <div className="carousel-main-container">
-      <div className="carousel-content">
-        <Slider
-          ref={sliderRef}
-          className="carousel-slide-container"
-          {...settings}
-        >
+    <div className="wedding-carousel-container">
+      <Slider ref={sliderRef} className="wedding-slide-container" {...settings}>
+        <div className="wedding-img-list">
           {images.map((image, index) => (
-            <div key={index} className="carousel-item">
-              <img
-                src={image.src.large}
-                alt={image.photographer}
-                className="lazy-img"
-              />
-            </div>
+            <img
+              key={index}
+              src={image.src.medium}
+              alt={image.photographer}
+              className={`wedding-thumbnail ${
+                index === currentIndex ? "active" : ""
+              }`}
+              onClick={() => handleThumbnailClick(index)}
+            />
           ))}
-        </Slider>
-      </div>
-      <div className="thumbnail-list">
-        {images.map((image, index) => (
-          <img
-            key={index}
-            src={image.src.medium}
-            alt={image.photographer}
-            className={`thumbnail ${index === currentIndex ? "active" : ""}`}
-            onClick={() => handleThumbnailClick(index)}
-          />
-        ))}
-      </div>
+        </div>
+      </Slider>
     </div>
   );
 }

@@ -14,3 +14,9 @@
   justify-content: center;
   align-items: center;
 }
+
+.wedding-carousel-main-container {
+  width: 100%;
+  display: flex;
+  background-color: white;
+}
