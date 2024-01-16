@@ -76,11 +76,10 @@
 }
 .navbar-link {
   width: fit-content;
-
   height: 100%;
   cursor: pointer;
   color: black;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   text-decoration: none;
 }
 .navbar-links-container ul li {

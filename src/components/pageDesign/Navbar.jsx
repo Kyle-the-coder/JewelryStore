@@ -152,10 +152,8 @@ export default function Navbar() {
       }
     };
 
-    // Attach the event listener to the document
     document.addEventListener("mousedown", handleClickOutside);
 
-    // Clean up the event listener on component unmount
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };

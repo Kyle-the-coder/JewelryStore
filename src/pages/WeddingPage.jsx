@@ -12,6 +12,9 @@ function WeddingPage() {
         side={false}
         position="0 27%"
       />
+      <div className="wedding-"></div>
+      <button className="form-button big">Women's Wedding Rings</button>
+      <button className="form-button big">Men's Wedding Rings</button>
       <WeddingRingDisplay />
       <div></div>
     </div>
