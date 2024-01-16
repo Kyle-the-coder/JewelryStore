@@ -20,7 +20,7 @@ export default function WeddingCarousel() {
           params: {
             query: "Men's Wedding Rings",
             orientation: "portrait",
-            per_page: 6,
+            per_page: 20,
           },
         });
         setImages(response.data.photos);
@@ -33,44 +33,44 @@ export default function WeddingCarousel() {
   }, []);
 
   const PrevArrow = (props) => (
-    <img
-      src={prevButtonImage}
-      alt="Previous"
-      className="custom-slick-arrow custom-slick-prev jewelry-arrow left"
+    <div
+      className="wedding-custom-slick-arrow wedding-custom-slick-prev wedding-jewelry-arrow left"
       onClick={props.onClick}
-    />
+    >
+      <img src={prevButtonImage} className="arrow" alt="Previous" />
+    </div>
   );
 
   const NextArrow = (props) => (
-    <img
-      src={nextButtonImage}
-      alt="Next"
-      className="custom-slick-arrow custom-slick-next jewelry-arrow right"
+    <div
+      className="wedding-custom-slick-arrow wedding-custom-slick-next wedding-jewelry-arrow right"
       onClick={props.onClick}
-    />
+    >
+      <img src={nextButtonImage} className="arrow" alt="Next" />
+    </div>
   );
   const handleThumbnailClick = (index) => {
     sliderRef.current.slickGoTo(index);
   };
 
   const settings = {
-    dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 6,
+    slidesToShow: 10,
     slidesToScroll: 1,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
-    beforeChange: (current, next) => setCurrentIndex(next % images.length),
   };
+
   console.log(images);
+
   return (
     <div className="wedding-carousel-container">
-      <Slider ref={sliderRef} {...settings}>
+      <Slider ref={sliderRef} className="wedding-slider" {...settings}>
         {images.map((image, index) => (
           <img
             key={index}
-            src={image.src.medium}
+            src={image.src.large}
             alt={image.photographer}
             className={`wedding-thumbnail ${
               index === currentIndex ? "active" : ""
