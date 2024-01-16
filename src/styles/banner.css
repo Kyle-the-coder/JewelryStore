@@ -6,7 +6,6 @@
   position: relative;
   align-items: center;
   border-radius: 0.5rem;
-
   background: radial-gradient(
     ellipse at center,
     rgba(0, 0, 0, 0) 0%,

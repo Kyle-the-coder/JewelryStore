@@ -42,6 +42,7 @@ function DesignersPage() {
         side={true}
         position="0 47%"
       />
+
       <div className="designer-desc-container">
         <h1 className="font4 f2">
           <span className="font-gold">D</span>esigner{" "}
@@ -58,6 +59,7 @@ function DesignersPage() {
         </p>
         <div className="designer-underline"></div>
       </div>
+
       <DesignerDisplay
         name="Sophia Sterling"
         desc="  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
@@ -70,6 +72,7 @@ function DesignersPage() {
         productList={sterlingProductList}
         top={true}
       />
+
       <DesignerDisplay
         name="Oliver Opulence"
         desc="  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
@@ -81,6 +84,7 @@ function DesignersPage() {
         bigImg={dragon}
         productList={opProductList}
       />
+
       <DesignerDisplay
         name="Isabella Gems"
         desc="  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
