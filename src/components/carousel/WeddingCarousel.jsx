@@ -57,7 +57,7 @@ export default function WeddingCarousel() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 6,
     slidesToScroll: 1,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
@@ -66,20 +66,18 @@ export default function WeddingCarousel() {
   console.log(images);
   return (
     <div className="wedding-carousel-container">
-      <Slider ref={sliderRef} className="wedding-slide-container" {...settings}>
-        <div className="wedding-img-list">
-          {images.map((image, index) => (
-            <img
-              key={index}
-              src={image.src.medium}
-              alt={image.photographer}
-              className={`wedding-thumbnail ${
-                index === currentIndex ? "active" : ""
-              }`}
-              onClick={() => handleThumbnailClick(index)}
-            />
-          ))}
-        </div>
+      <Slider ref={sliderRef} {...settings}>
+        {images.map((image, index) => (
+          <img
+            key={index}
+            src={image.src.medium}
+            alt={image.photographer}
+            className={`wedding-thumbnail ${
+              index === currentIndex ? "active" : ""
+            }`}
+            onClick={() => handleThumbnailClick(index)}
+          />
+        ))}
       </Slider>
     </div>
   );

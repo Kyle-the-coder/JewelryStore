@@ -90,7 +90,7 @@ export default function CarouselComponent() {
         {images.map((image, index) => (
           <img
             key={index}
-            src={image.src.medium}
+            src={image.src.large}
             alt={image.photographer}
             className={`thumbnail ${index === currentIndex ? "active" : ""}`}
             onClick={() => handleThumbnailClick(index)}
