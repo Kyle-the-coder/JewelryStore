@@ -12,8 +12,17 @@ import gRing from "../assets/ring-green.jpeg";
 import necklace from "../assets/necklace-gold.jpeg";
 import neckHeart from "../assets/necklace-heart.jpeg";
 import neckFashion from "../assets/necklace-fasion.jpeg";
-
+import des1 from "../assets/rings-on-rings-display.jpg";
+import des2 from "../assets/rings-green-display.jpg";
+import des3 from "../assets/rings-phone-display.jpg";
+import des4 from "../assets/rings-unique-display.jpg";
+import des5 from "../assets/ring-oval-eternity.jpeg";
+import des6 from "../assets/ring-princess-eternity.jpeg";
+import PhotoTextDisplay from "../components/display/PhotoTextDisplay";
 import "../styles/designerpage.css";
+import PhotoDisplay from "../components/display/PhotoDisplay";
+import QuoteLineDisplay from "../components/display/QuoteLineDisplay";
+
 function DesignersPage() {
   const sterlingProductList = [
     { prodImg: drop, prodName: "Drop In Love", prodPrice: "$3,234" },
@@ -33,6 +42,14 @@ function DesignersPage() {
     { prodImg: neckFashion, prodName: "Bird In Love", prodPrice: "$3,234" },
   ];
 
+  const designerList = [
+    <PhotoTextDisplay img={des1} title="Designer 1" paragraph={null} />,
+    <PhotoTextDisplay img={des2} title="Designer 2" paragraph={null} />,
+    <PhotoTextDisplay img={des3} title="Designer 3" paragraph={null} />,
+    <PhotoTextDisplay img={des4} title="Designer 4" paragraph={null} />,
+    <PhotoTextDisplay img={des5} title="Designer 5" paragraph={null} />,
+    <PhotoTextDisplay img={des6} title="Designer 6" paragraph={null} />,
+  ];
   return (
     <div className="designer-main-container">
       <Banner
@@ -44,7 +61,7 @@ function DesignersPage() {
       />
 
       <div className="designer-desc-container">
-        <h1 className="font4 f2">
+        <h1 className="font4 f3">
           <span className="font-gold">D</span>esigner{" "}
           <span className="font-green">E</span>xperience
         </h1>
@@ -57,8 +74,18 @@ function DesignersPage() {
           facilisis. Sed fringilla velit at turpis aliquam, nec vestibulum
           libero ullamcorper.
         </p>
-        <div className="designer-underline"></div>
       </div>
+
+      <div className="designer-main-content-container">
+        <PhotoDisplay img={des1} title="Designer 1" />
+        <PhotoDisplay img={des2} title="Designer 2" />
+        <PhotoDisplay img={des3} title="Designer 3" />
+        <PhotoDisplay img={des4} title="Designer 4" />
+        <PhotoDisplay img={des5} title="Designer 5" />
+        <PhotoDisplay img={des6} title="Designer 6" />
+      </div>
+
+      <QuoteLineDisplay quote="See our Designers" />
 
       <DesignerDisplay
         name="Sophia Sterling"

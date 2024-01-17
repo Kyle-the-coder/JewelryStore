@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import axios from "axios";
 import Slider from "react-slick";
 import prevButtonImage from "../../assets/left-chevron.png";
@@ -7,6 +7,7 @@ import "../../styles/weddingcarousel.css";
 export default function WeddingCarousel() {
   const [images, setImages] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isAutoSlide, setIsAutoSlide] = useState(true);
   const sliderRef = useRef(null);
 
   useEffect(() => {
@@ -56,13 +57,13 @@ export default function WeddingCarousel() {
   const settings = {
     infinite: true,
     speed: 500,
+    autoplay: true,
+    autoplaySpeed: 7000,
     slidesToShow: 5,
     slidesToScroll: 1,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
   };
-
-  console.log(images);
 
   return (
     <div className="wedding-carousel-container">
