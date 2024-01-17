@@ -3,11 +3,11 @@ import "../../styles/weddingdisplay.css";
 export default function WeddingRingDisplay({}) {
   return (
     <div className="wedding-main-container">
-      <div className="wedding-carousel-container">
+      <div className="wedding-carousel-display-container">
         <CarouselComponent />
       </div>
       <div className="wedding-display-container">
-        <h1 className="font4">
+        <h1 className="font4 f2-5">
           Your <span className="font-gold">W</span>edding{" "}
           <span className="font-green">E</span>xperience
         </h1>

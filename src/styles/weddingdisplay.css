@@ -6,13 +6,19 @@
   align-items: center;
 }
 
-.wedding-carousel-container {
+.wedding-carousel-display-container {
   width: 50%;
   height: 100%;
+
   display: flex;
   justify-content: center;
 }
 
 .wedding-display-container {
-  width: 50%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  justify-content: center;
 }
