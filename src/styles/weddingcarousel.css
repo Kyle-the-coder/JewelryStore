@@ -50,8 +50,10 @@
 
 .arrow-container-slick-prev {
   left: 0;
+  margin-left: 5px;
 }
 
 .arrow-container-slick-next {
   right: 0;
+  margin-right: 5px;
 }
