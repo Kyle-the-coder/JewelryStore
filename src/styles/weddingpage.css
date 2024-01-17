@@ -15,6 +15,25 @@
   align-items: center;
 }
 
+.wedding-button {
+  padding: 15px 25px 15px 25px;
+  border-radius: 0.5rem;
+  border: 1px solid #aeaeae;
+  transition: all 0.8s;
+  cursor: pointer;
+}
+
+.wedding-button:hover {
+  background-color: #104911;
+  color: #f7f4f3;
+  border: 1px solid #f7f4f3;
+}
+.wedding-button.gold:hover {
+  background-color: #cca000;
+  color: #f7f4f3;
+  border: 1px solid #f7f4f3;
+}
+
 .wedding-carousel-main-container {
   width: 100%;
   display: flex;

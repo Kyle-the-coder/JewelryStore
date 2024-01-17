@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import Slider from "react-slick";
-import prevButtonImage from "../../assets/jewelry-left.png";
-import nextButtonImage from "../../assets/jewelry-right.png";
+import prevButtonImage from "../../assets/left-chevron.png";
+import nextButtonImage from "../../assets/right-chevron.png";
 import "../../styles/weddingcarousel.css";
 export default function WeddingCarousel() {
   const [images, setImages] = useState([]);
@@ -34,7 +34,7 @@ export default function WeddingCarousel() {
 
   const PrevArrow = (props) => (
     <div
-      className="wedding-custom-slick-arrow wedding-custom-slick-prev wedding-jewelry-arrow left"
+      className="arrow-container arrow-container-slick-prev "
       onClick={props.onClick}
     >
       <img src={prevButtonImage} className="arrow" alt="Previous" />
@@ -43,7 +43,7 @@ export default function WeddingCarousel() {
 
   const NextArrow = (props) => (
     <div
-      className="wedding-custom-slick-arrow wedding-custom-slick-next wedding-jewelry-arrow right"
+      className="arrow-container arrow-container-slick-next"
       onClick={props.onClick}
     >
       <img src={nextButtonImage} className="arrow" alt="Next" />
@@ -56,7 +56,7 @@ export default function WeddingCarousel() {
   const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 10,
+    slidesToShow: 5,
     slidesToScroll: 1,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
@@ -68,15 +68,16 @@ export default function WeddingCarousel() {
     <div className="wedding-carousel-container">
       <Slider ref={sliderRef} className="wedding-slider" {...settings}>
         {images.map((image, index) => (
-          <img
-            key={index}
-            src={image.src.large}
-            alt={image.photographer}
-            className={`wedding-thumbnail ${
-              index === currentIndex ? "active" : ""
-            }`}
-            onClick={() => handleThumbnailClick(index)}
-          />
+          <div key={index} className="wedding-thumbnail-container">
+            <img
+              src={image.src.large}
+              alt={image.photographer}
+              className={`wedding-thumbnail ${
+                index === currentIndex ? "active" : ""
+              }`}
+              onClick={() => handleThumbnailClick(index)}
+            />
+          </div>
         ))}
       </Slider>
     </div>

@@ -16,10 +16,12 @@ function WeddingPage() {
         position="0 27%"
       />
       <div className="wedding-button-container">
-        <button className="form-button f1-5 mr25 gold">
+        <button className="wedding-button font1 f1-5 mr25 gold">
           Women's Wedding Rings
         </button>
-        <button className="form-button f1-5">Men's Wedding Rings</button>
+        <button className="wedding-button font1 f1-5">
+          Men's Wedding Rings
+        </button>
       </div>
 
       <div className="wedding-carousel-main-container">
