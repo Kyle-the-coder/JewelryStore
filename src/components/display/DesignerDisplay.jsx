@@ -27,7 +27,7 @@ export default function DesignerDisplay({
     >
       <div className="designer-display-top-container">
         <div className="designer-display-left-top">
-          <h1 className="font4 f2 m0">
+          <h1 className="font4 f3 m0">
             {name.split("").map((char, index) => {
               let color = "black";
               // Check conditions for gold and green colors

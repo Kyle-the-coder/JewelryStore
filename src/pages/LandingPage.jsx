@@ -74,16 +74,19 @@ function LandingPage() {
 
       <div className="landing-quote-container">
         <h1 className="font1 f1-2 ">
-          "Our passion is our craft, we put love into our service so you can express yours"
+          "Our passion is our craft, we put love into our service so you can
+          express yours"
         </h1>
         <p className="font4 f1-5 m0">-Timothy Patrick</p>
       </div>
 
       <SliderTextDisplay
-        title={<h1 className="font4">
-          In <span className="font-gold">S</span>tore{" "}
-          <span className="font-green">C</span>raftsmenship
-        </h1>}
+        title={
+          <h1 className="font4">
+            In <span className="font-gold">S</span>tore{" "}
+            <span className="font-green">C</span>raftsmenship
+          </h1>
+        }
         paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
             fermentum justo eget nisl dapibus, nec venenatis justo malesuada.
             Curabitur vel libero nec nisi suscipit pharetra. Duis vel risus eu
@@ -96,6 +99,7 @@ function LandingPage() {
         img={craftsman}
         sliderId={1}
         isTopCurve={true}
+        nav={"/services"}
       />
 
       <div className="landing-quote-container">
@@ -107,10 +111,12 @@ function LandingPage() {
       </div>
 
       <SliderTextDisplay
-        title={<h1 className="font4">
-          <span className="font-gold">C</span>ompetitive{" "}
-          <span className="font-green">P</span>ricing
-        </h1>}
+        title={
+          <h1 className="font4">
+            <span className="font-gold">C</span>ompetitive{" "}
+            <span className="font-green">P</span>ricing
+          </h1>
+        }
         paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
             fermentum justo eget nisl dapibus, nec venenatis justo malesuada.
             Curabitur vel libero nec nisi suscipit pharetra. Duis vel risus eu
@@ -123,6 +129,7 @@ function LandingPage() {
         img={pricing}
         sliderId={2}
         isTopCurve={false}
+        nav={"/jewelry"}
       />
     </div>
   );

@@ -2,6 +2,7 @@ import gsap from "gsap";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import "../../styles/slidertext.css";
+import { useNavigate } from "react-router-dom";
 
 export function SliderTextDisplay({
   title,
@@ -12,8 +13,11 @@ export function SliderTextDisplay({
   sliderId,
   isFirstRender,
   isTopCurve,
+  nav,
 }) {
+  const [navState, setNavState] = useState(nav);
   const [ref, inView] = useInView({});
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (!isFirstRender) {
@@ -46,8 +50,8 @@ export function SliderTextDisplay({
       }
     }
   }, [inView]);
+  console.log(nav);
 
-  console.log(typeof isTopCurve);
   return (
     <div
       className="slider-text-display-container"
@@ -59,10 +63,12 @@ export function SliderTextDisplay({
     >
       {leftOrRight ? (
         <>
-          <div className="slider-text-display" ref={ref} >
+          <div className="slider-text-display" ref={ref}>
             {title}
-            <p className="font1 f-8" >{paragraph}</p>
-            <button className="form-button">{buttonName}</button>
+            <p className="font1 f-8">{paragraph}</p>
+            <button onClick={() => navigate(nav)} className="form-button">
+              {buttonName}
+            </button>
           </div>
           <div className="slider-img-display">
             <img
@@ -86,7 +92,9 @@ export function SliderTextDisplay({
           <div className="slider-text-display" ref={ref}>
             {title}
             <p className="font1 f-8">{paragraph}</p>
-            <button className="form-button">{buttonName}</button>
+            <button onClick={() => navigate(nav)} className="form-button">
+              {buttonName}
+            </button>
           </div>
         </>
       )}
