@@ -58,7 +58,7 @@ export default function WeddingCarousel() {
     infinite: true,
     speed: 500,
     autoplay: true,
-    autoplaySpeed: 7000,
+    autoplaySpeed: 3000,
     slidesToShow: 5,
     slidesToScroll: 1,
     prevArrow: <PrevArrow />,
