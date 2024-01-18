@@ -6,6 +6,7 @@ import { ErrorLayout } from "./layouts/ErrorLayout";
 import { weddingRoute } from "./pages/WeddingPage";
 import { jewelryRoute } from "./pages/JewelryPage";
 import { designersRoute } from "./pages/DesignersPage";
+import { serviceRoute } from "./pages/ServicePage";
 
 export const router = createBrowserRouter([
   {
@@ -18,6 +19,7 @@ export const router = createBrowserRouter([
       { path: "/wedding", ...weddingRoute },
       { path: "/jewelry", ...jewelryRoute },
       { path: "/designers", ...designersRoute },
+      { path: "/services", ...serviceRoute },
     ],
   },
 ]);

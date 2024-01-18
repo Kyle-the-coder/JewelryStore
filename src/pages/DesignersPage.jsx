@@ -77,15 +77,59 @@ function DesignersPage() {
       </div>
 
       <div className="designer-main-content-container">
-        <PhotoDisplay img={des1} title="Designer 1" />
-        <PhotoDisplay img={des2} title="Designer 2" />
-        <PhotoDisplay img={des3} title="Designer 3" />
-        <PhotoDisplay img={des4} title="Designer 4" />
-        <PhotoDisplay img={des5} title="Designer 5" />
-        <PhotoDisplay img={des6} title="Designer 6" />
+        <div className="designer-grid-container">
+          <PhotoDisplay
+            img={des1}
+            title={
+              <h1 className="f2-5">
+                <span className="font-gold">D</span>ESIGNER 1
+              </h1>
+            }
+          />
+          <PhotoDisplay
+            img={des2}
+            title={
+              <h1 className="f2-5">
+                <span className="font-green">D</span>ESIGNER 2
+              </h1>
+            }
+          />
+          <PhotoDisplay
+            img={des3}
+            title={
+              <h1 className="f2-5">
+                <span className="font-gold">D</span>ESIGNER 3
+              </h1>
+            }
+          />
+          <PhotoDisplay
+            img={des4}
+            title={
+              <h1 className="f2-5">
+                <span className="font-green">D</span>ESIGNER 4
+              </h1>
+            }
+          />
+          <PhotoDisplay
+            img={des5}
+            title={
+              <h1 className="f2-5">
+                <span className="font-gold">D</span>ESIGNER 5
+              </h1>
+            }
+          />
+          <PhotoDisplay
+            img={des6}
+            title={
+              <h1 className="f2-5">
+                <span className="font-green">D</span>ESIGNER 6
+              </h1>
+            }
+          />
+        </div>
       </div>
 
-      <QuoteLineDisplay quote="See our Designers" />
+      <QuoteLineDisplay quote="Designers Quick Peak" />
 
       <DesignerDisplay
         name="Sophia Sterling"
