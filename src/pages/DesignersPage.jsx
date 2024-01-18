@@ -18,7 +18,6 @@ import des3 from "../assets/rings-phone-display.jpg";
 import des4 from "../assets/rings-unique-display.jpg";
 import des5 from "../assets/ring-oval-eternity.jpeg";
 import des6 from "../assets/ring-princess-eternity.jpeg";
-import PhotoTextDisplay from "../components/display/PhotoTextDisplay";
 import "../styles/designerpage.css";
 import PhotoDisplay from "../components/display/PhotoDisplay";
 import QuoteLineDisplay from "../components/display/QuoteLineDisplay";
@@ -42,14 +41,6 @@ function DesignersPage() {
     { prodImg: neckFashion, prodName: "Bird In Love", prodPrice: "$3,234" },
   ];
 
-  const designerList = [
-    <PhotoTextDisplay img={des1} title="Designer 1" paragraph={null} />,
-    <PhotoTextDisplay img={des2} title="Designer 2" paragraph={null} />,
-    <PhotoTextDisplay img={des3} title="Designer 3" paragraph={null} />,
-    <PhotoTextDisplay img={des4} title="Designer 4" paragraph={null} />,
-    <PhotoTextDisplay img={des5} title="Designer 5" paragraph={null} />,
-    <PhotoTextDisplay img={des6} title="Designer 6" paragraph={null} />,
-  ];
   return (
     <div className="designer-main-container">
       <Banner
