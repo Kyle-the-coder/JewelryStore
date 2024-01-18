@@ -7,6 +7,7 @@ import { weddingRoute } from "./pages/WeddingPage";
 import { jewelryRoute } from "./pages/JewelryPage";
 import { designersRoute } from "./pages/DesignersPage";
 import { serviceRoute } from "./pages/ServicePage";
+import { storeFrontRoute } from "./pages/StoreInfoPage";
 
 export const router = createBrowserRouter([
   {
@@ -20,6 +21,7 @@ export const router = createBrowserRouter([
       { path: "/jewelry", ...jewelryRoute },
       { path: "/designers", ...designersRoute },
       { path: "/services", ...serviceRoute },
+      { path: "/storefront", ...storeFrontRoute },
     ],
   },
 ]);

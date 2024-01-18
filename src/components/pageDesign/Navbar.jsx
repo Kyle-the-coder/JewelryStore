@@ -193,7 +193,12 @@ export default function Navbar() {
       <nav className="navbar-main-container">
         <div className="navbar-info-container">
           <div className="navbar-info-locations">
-            <p className="font1 extra f-8">Santa Rosa</p>
+            <p
+              className="font1 extra f-8"
+              onClick={() => navigate("/storefront")}
+            >
+              Santa Rosa
+            </p>
             <p className="font1  f-8">|</p>
             <p className="font1 extra f-8">Santa Clara</p>
           </div>
