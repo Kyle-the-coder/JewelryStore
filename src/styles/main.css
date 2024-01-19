@@ -62,7 +62,9 @@ body {
 .pointer {
   cursor: pointer;
 }
-
+.bold {
+  font-weight: bold;
+}
 .text-center {
   text-align: center;
 }
