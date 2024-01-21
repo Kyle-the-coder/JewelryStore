@@ -84,7 +84,9 @@ body {
 .font4 {
   font-family: "Font4", sans-serif;
 }
-
+.font5 {
+  font-family: "Font1", sans-serif;
+}
 .form-button {
   padding: 5px 25px 5px 25px;
   border-radius: 0.5rem;
@@ -125,4 +127,13 @@ body {
 }
 .font-light-green {
   color: #098b54;
+}
+
+@font-face {
+  font-family: "Font1";
+  src: url("/dist/fonts/Tajawal-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Font4";
+  src: url("/dist/fonts/Satisfy-Regular.ttf") format("ttf");
 }
