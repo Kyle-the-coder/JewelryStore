@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Font1";
+  src: url("/dist/fonts/Tajawal-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Font4";
+  src: url("/dist/fonts/Satisfy-Regular.ttf") format("ttf");
+}
