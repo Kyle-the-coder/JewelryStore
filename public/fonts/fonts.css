@@ -1,8 +1,46 @@
-@font-face {
+/* @font-face {
   font-family: "Font1";
   src: url("/fonts/Tajawal-Regular.ttf") format("ttf");
 }
 @font-face {
   font-family: "Font4";
   src: url("/fonts/Satisfy-Regular.ttf") format("ttf");
+} */
+
+@font-face {
+  font-family: "Font1";
+  src: url("/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Font2";
+  src: url("/fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Font3";
+  src: url("/fonts/Oswald-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Font4";
+  src: url("/fonts/Carattere-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Font5";
+  src: url("/fonts/PTSerif-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Font6";
+  src: url("/public/fonts/GreatVibes-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
