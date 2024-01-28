@@ -14,7 +14,9 @@ export function Footer() {
   return (
     <div className="footer-main-container">
       <div className="footer-container bigger">
-        <h3 className="text-center font4 f2">The Timothy Patrick Difference</h3>
+        <h3 className="text-center font4 f2">
+          The Royal Jewel Pavilion Difference
+        </h3>
         <p className="text-center mb-5 m0 px-10 font2 f-8">
           We embrace the principles of the American Gem Society where business
           ethics and professionalism are a key measure of success.

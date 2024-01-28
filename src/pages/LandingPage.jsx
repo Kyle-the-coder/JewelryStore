@@ -77,7 +77,7 @@ function LandingPage() {
           "Our passion is our craft, we put love into our service so you can
           express yours"
         </h1>
-        <p className="font4 f1-5 m0">-Timothy Patrick</p>
+        <p className="font4 f1-5 m0">-Royal Jewel Pavilion</p>
       </div>
 
       <SliderTextDisplay
@@ -107,7 +107,7 @@ function LandingPage() {
           "We love what we do, and we work hard to give you what you need at a
           good price"
         </h1>
-        <p className="font4 f1-5 m0">-Timothy Patrick</p>
+        <p className="font4 f1-5 m0">-Royal Jewel Pavilion</p>
       </div>
 
       <SliderTextDisplay

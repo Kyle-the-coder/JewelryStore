@@ -1,6 +1,6 @@
 import "../../styles/newsletter.css";
 import "../../styles/main.css";
-import logo from "../../assets/j-store-logo.jpeg";
+import logo from "../../assets/newLogo4.png";
 export default function NewsLetter() {
   return (
     <div className="newsletter-main-container">
@@ -20,7 +20,7 @@ export default function NewsLetter() {
       <div className="newsletter-bottom-social-posts-container">
         <img src={logo} className="newsletter-logo" />
 
-        <p className="f1-5 font4 m8">Timothy Patrick Jewelers</p>
+        <p className="f1-5 font4 m8">Royal Jewel Pavilion</p>
         <p className="font4 m0 ">Est. 2009</p>
       </div>
     </div>

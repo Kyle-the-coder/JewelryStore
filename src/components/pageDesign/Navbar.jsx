@@ -1,5 +1,5 @@
 import "../../styles/navbar.css";
-import logo from "../../assets/j-store-logo.jpeg";
+import logo from "../../assets/newLogo4.png";
 import insta from "../../assets/instagram2.png";
 import fb from "../../assets/facebook2.png";
 import { useEffect, useRef, useState } from "react";
@@ -212,7 +212,7 @@ export default function Navbar() {
             }}
           >
             <img src={logo} />
-            <p style={{ fontSize: "1.2rem" }}>Timothy Patrick Jewelers</p>
+            <p style={{ fontSize: "1.2rem" }}>Royal Jewel Pavilion</p>
             <p className="f-8 ">Est. 2009</p>
           </div>
           <div className="navbar-info-socials">

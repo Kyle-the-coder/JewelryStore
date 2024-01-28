@@ -24,7 +24,9 @@ export default function Banner({ img, video, title, desc, side, position }) {
         style={{ alignItems: side ? "flex-start" : "flex-end" }}
       >
         <h1
-          className={`${img === null ? "banner-info-vid" : "banner-info plus"}`}
+          className={`${
+            img === null ? "banner-info-vid " : "banner-info plus"
+          }`}
         >
           {title}
         </h1>
