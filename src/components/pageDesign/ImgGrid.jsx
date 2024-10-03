@@ -36,6 +36,7 @@ const ImgGrid = ({ setIsFirstRender }) => {
             query: findArr(imgArr1),
             orientation: "portrait",
             per_page: 6,
+            total_results: 10,
           },
         };
         const config2 = {
@@ -46,6 +47,7 @@ const ImgGrid = ({ setIsFirstRender }) => {
             query: findArr(imgArr2),
             orientation: "portrait",
             per_page: 6,
+            total_results: 10,
           },
         };
         const config3 = {
@@ -56,6 +58,7 @@ const ImgGrid = ({ setIsFirstRender }) => {
             query: findArr(imgArr3),
             orientation: "portrait",
             per_page: 6,
+            total_results: 10,
           },
         };
         const response1 = await axios.get(apiUrl, config1);
